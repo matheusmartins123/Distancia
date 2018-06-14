@@ -1,0 +1,61 @@
+<ion-header >
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title align="center" >Distância</ion-title>
+  </ion-navbar>
+</ion-header> 
+
+<ion-content>
+  <div id="right-panel">
+       <div id="inputs">
+         <ion-row >
+           <ion-col width-50 id="ion-col1">
+             <div>
+               <ion-badge  class="badgeOrigem">Origem</ion-badge>
+             </div>
+             <ion-item id="ion-itemA">
+               <ion-input [(ngModel)]="latOri"
+                          type="text"
+                          placeholder="Latitude Origem"
+                          clearInput clearOnEdit="false">
+               </ion-input>
+             </ion-item>
+             <ion-item id="ion-itemB">
+               <ion-input [(ngModel)]="longOri"
+                          type="text"
+                          placeholder="Longitude Origem"
+                          clearInput clearOnEdit="false">
+               </ion-input>
+             </ion-item>
+           </ion-col>
+           <ion-col width-50 id="ion-col2">
+             <div>
+               <ion-badge  class="badgeDestino">Destino</ion-badge>
+             </div>
+             <ion-item id="ion-itemC">
+               <ion-input [(ngModel)]="latDest"
+                          type="text"
+                          placeholder="Latitude Destino"
+                          clearInput clearOnEdit="false">
+               </ion-input>
+             </ion-item >
+             <ion-item id="ion-itemD">
+               <ion-input [(ngModel)]="longDest"
+                          type="text"
+                          placeholder="Longitude Destino"
+                          clearInput clearOnEdit="false">
+               </ion-input>
+             </ion-item>
+           </ion-col>
+         </ion-row>
+         <button id="btn" ion-button block outline (click)="calcRota(latDest, longDest)">Calcular</button>
+       </div>
+       <div>
+         <strong ><hr id="hr">Resultado</strong>
+       </div>
+       <div id="output"></div>
+     </div>
+     <div id="map"></div>
+</ion-content>

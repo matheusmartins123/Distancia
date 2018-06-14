@@ -1,0 +1,103 @@
+#right-panel {
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 12px;
+}
+
+#right-panel select, #right-panel input {
+  
+  font-size: 15px;
+  margin-bottom: -1px;
+}
+#ion-col1{
+  right: -35px;
+}
+#ion-col2{
+  left: 13px;
+}
+#ion-itemA{
+  left: -40px;
+}
+#ion-itemB{
+  left: -40px;
+}
+#ion-itemC{
+  left: -29px;
+}
+#ion-itemD{
+  left: -29px;
+}
+.badgeOrigem {
+  text-align: center;
+  background-color: #44853e;
+  height: 25px;
+  padding-top: 4px;
+  width: 110px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+#hr{
+  border: 0.2px solid;
+}
+
+.badgeDestino {
+  text-align: center;
+  background-color: #2a45bb;
+  height: 25px;
+  padding-top: 4px;
+  width: 110px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+#floating-panel {
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+#right-panel select {
+  width: 100%;
+}
+
+#btn{
+  left: 20px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #2a45bb;
+  height: 45px;
+  width: 300px;
+}
+#right-panel i {
+  font-size: 12px;
+}
+html, body {
+  
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+#right-panel {
+  margin-top: 8%;
+  float: bottom;
+  width: 100%;
+  padding-left: 2%;
+  color: black;
+  font-size: 20px;
+}
+#output {
+  font-size: 13px;
+}
